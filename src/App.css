@@ -3,9 +3,29 @@
 }
 
 body {
-    padding: 30px 15%;
     background-color: #f0f0f0;
     font-family: sans-serif;
+}
+
+header {
+    padding: 30px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px #464646ce;
+    border-bottom: solid 0.5px;
+}
+
+header span {
+    color: green;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin: 0 15px
 }
 
 .vignette {
@@ -14,6 +34,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     background-color: #fff;
+    box-shadow: 2px 5px 3px #464646ce;
 }
 
 .vignette>*{
@@ -43,6 +64,7 @@ body {
 }
 
 #vignettes {
+    padding: 30px 15%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
