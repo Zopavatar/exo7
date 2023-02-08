@@ -20,9 +20,13 @@ export const Object = () => {
 
     return(
         <div id="vignettes">
-            {tab.map((la_vignette)=>(
-                <Vignettes image={la_vignette.src} intitule={la_vignette.nom} type={la_vignette.type} alcool={la_vignette.alcool}/>  
-            ))}
+            <h2>Cocktails</h2>
+
+            <div>
+                {tab.map((la_vignette)=>(
+                    <Vignettes image={la_vignette.src} intitule={la_vignette.nom} type={la_vignette.type} alcool={la_vignette.alcool}/>  
+                ))}
+            </div>
         </div>
     )
 }

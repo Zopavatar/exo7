@@ -28,6 +28,31 @@ header a {
     margin: 0 15px
 }
 
+#search{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search div{
+    background-color: #fff;
+    padding: 30px;
+    width: 400px;
+    border-radius:5px;
+    box-shadow: 2px 5px 3px #464646ce;
+    color: green;
+}
+
+#search div input {
+    width: 97%;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px; 
+}
+
 .vignette {
     width: 30%;
     margin-bottom: 60px;
@@ -64,6 +89,13 @@ header a {
 }
 
 #vignettes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vignettes>div {
     padding: 30px 15%;
     display: flex;
     justify-content: space-between;
