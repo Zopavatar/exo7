@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Vignettes = ({image,intitule,type,alcool}) => {
+export const Vignettes = ({image,intitule,type,alcool,mode,dark,light}) => {
     let mon_style ={
         backgroundImage: image,
         backgroundSize: "cover",
@@ -10,7 +10,7 @@ export const Vignettes = ({image,intitule,type,alcool}) => {
     }
 
   return (
-    <div className="vignette">
+    <div className="vignette" style = {mode ? light: dark}>
         <div id="image" style={mon_style}></div>
 
         <h1>{intitule}</h1>

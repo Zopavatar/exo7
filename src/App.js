@@ -5,11 +5,23 @@ import { Cherche } from './components/search/search';
 
 function App() {
 
+  let mode = true;
+
+  let light = {
+    backgrounColor:"inherit",
+    color:"inherit"
+  }
+
+  let dark = {
+    backgroundColor: "black",
+    color: "white",
+  }
+
   return (
     <div className="App">
-      <Naviguer/>
-      <Cherche/>
-      <Object/>
+      <Naviguer mode = {mode} dark = {dark} light={light}/>
+      <Cherche mode = {mode} dark = {dark} light={light}/>
+      <Object mode = {mode} dark = {dark} light={light}/>
     </div>
   );
 }
